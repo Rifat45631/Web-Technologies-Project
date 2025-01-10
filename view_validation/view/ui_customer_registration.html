@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration</title>
+</head>
+
+<body>
+    <form action= "../view/control/reg_control.php"method="post">
+    <fieldset  >
+            <legend>
+                <h2> Customer Registration</h2>
+            </legend>
+        <table>
+
+
+            <tr>
+                <td>User Name</td>
+                <td>:</td>
+                <td><input type="text" name="c_name"></td>
+            </tr>
+    
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="c_pass"></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td>:</td>
+                <td><input type="password" name="c_c_pass"></td>
+            </tr>
+    
+            <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="text" name="c_mail"></td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td>:</td>
+                <td><input type="text" name="c_ph_num"></td>
+            </tr>
+
+            <tr>
+                <td>Preferred Contact Method</td><td>:</td>
+                <td>
+                    <select name="c_contact_method">
+                        <option value="none" selected>Select Method</option>
+                        <option value="SMS">SMS</option>
+                        <option value="Call">Phone Call</option>
+                        <option value="E-mail">E-mail</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td><td>:</td>
+                <td>
+                    <select name="c_gender">
+                        <option value="none" selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>Date of Birth</td><td>:</td>
+                <td><input type="date" name="c_date"></td>
+            </tr>
+
+            <tr>
+                <td>Delivery Address</td><td>:</td>
+                <td><textarea name="c_Delivery_address" id="Delivery_address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Permanent Address</td><td>:</td>
+                <td><textarea name="c_Parmanent_address" id="Parmanent_address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td  align="center"><input type="submit" name="submit"></td>
+                <td  align="center"><input type="reset" name="reset"></td>
+            </tr>
+
+        </table>
+    </fieldset>
+
+            <tr>
+                <td><h3>Are you done with Regisrtraion?</h3></td>
+                <td> <a href="../view/ui_customer_login.html" target="_self"> Wanna Go to Login!</a></td>
+            </tr>
+    </form>
+    
+</body>
+</html>
+</body>
+</html>
